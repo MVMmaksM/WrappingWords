@@ -28,15 +28,22 @@ namespace WordWrapping.Services
         public static bool isAllowedSymbols(string text) 
         {
             //символы кириллицы
-            var cirillics = Enumerable.Range(1024, 256).Select(ch => (char)ch);
+            var cirillics = Enumerable
+                .Range(1024, 256)
+                .Select(ch => (char)ch);
             //другие символы, такие как пробелы цифры и т.д.
-            var allowedSymbols = Enumerable.Range(32, 33).Select(ch => (char)ch);
+            var allowedSymbols = Enumerable
+                .Range(32, 33)
+                .Select(ch => (char)ch)
+                .ToList();
+            //сивол тире
+            allowedSymbols.Add(Convert.ToChar(8211));
 
             foreach (var ch in text) 
             {
                 if (!allowedSymbols.Contains(ch) && !cirillics.Contains(ch)) 
                 {
-                    MessageHelper.Error("Текст должен быть на русском языке");
+                    MessageHelper.Error($"Текст должен быть на русском языке {ch}");
                     return false;
                 }                    
             }

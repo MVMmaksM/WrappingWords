@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{995FA76D-28B6-4758-B4FF-3DEC60950C27}|WordWrapping\\WordWrapping.csproj|c:\\users\\vagan\\source\\repos\\wordwrapping\\wordwrapping\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{995FA76D-28B6-4758-B4FF-3DEC60950C27}|WordWrapping\\WordWrapping.csproj|solutionrelative:wordwrapping\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{995FA76D-28B6-4758-B4FF-3DEC60950C27}|WordWrapping\\WordWrapping.csproj|c:\\users\\vagan\\source\\repos\\wordwrapping\\wordwrapping\\core\\textformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{995FA76D-28B6-4758-B4FF-3DEC60950C27}|WordWrapping\\WordWrapping.csproj|solutionrelative:wordwrapping\\core\\textformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{995FA76D-28B6-4758-B4FF-3DEC60950C27}|WordWrapping\\WordWrapping.csproj|c:\\users\\vagan\\source\\repos\\wordwrapping\\wordwrapping\\core\\consonants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{995FA76D-28B6-4758-B4FF-3DEC60950C27}|WordWrapping\\WordWrapping.csproj|solutionrelative:wordwrapping\\core\\consonants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{995FA76D-28B6-4758-B4FF-3DEC60950C27}|WordWrapping\\WordWrapping.csproj|c:\\users\\vagan\\source\\repos\\wordwrapping\\wordwrapping\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995FA76D-28B6-4758-B4FF-3DEC60950C27}|WordWrapping\\WordWrapping.csproj|solutionrelative:wordwrapping\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{995FA76D-28B6-4758-B4FF-3DEC60950C27}|WordWrapping\\WordWrapping.csproj|c:\\users\\vagan\\source\\repos\\wordwrapping\\wordwrapping\\facade\\facademain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,50 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Consonants.cs",
-              "DocumentMoniker": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\Core\\Consonants.cs",
-              "RelativeDocumentMoniker": "WordWrapping\\Core\\Consonants.cs",
-              "ToolTip": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\Core\\Consonants.cs",
-              "RelativeToolTip": "WordWrapping\\Core\\Consonants.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T15:15:53.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TextFormatter.cs",
               "DocumentMoniker": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\Core\\TextFormatter.cs",
               "RelativeDocumentMoniker": "WordWrapping\\Core\\TextFormatter.cs",
               "ToolTip": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\Core\\TextFormatter.cs",
               "RelativeToolTip": "WordWrapping\\Core\\TextFormatter.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA5wCcAAAAMAAAA",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAowF0AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T14:15:26.917Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "FacadeMain.cs",
               "DocumentMoniker": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\Facade\\FacadeMain.cs",
               "RelativeDocumentMoniker": "WordWrapping\\Facade\\FacadeMain.cs",
               "ToolTip": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\Facade\\FacadeMain.cs",
               "RelativeToolTip": "WordWrapping\\Facade\\FacadeMain.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAIAwwBwAAABFAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T12:39:15.967Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WordWrapping\\MainWindow.xaml",
@@ -85,13 +68,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WordWrapping\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\MainWindow.xaml.cs",
               "RelativeToolTip": "WordWrapping\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAAB4AAABaAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAB4AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T11:42:05.753Z",
               "EditorCaption": ""

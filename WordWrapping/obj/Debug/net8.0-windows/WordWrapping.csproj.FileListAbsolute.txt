@@ -18,3 +18,4 @@ C:\Users\vagan\source\repos\WordWrapping\WordWrapping\obj\Debug\net8.0-windows\r
 C:\Users\vagan\source\repos\WordWrapping\WordWrapping\obj\Debug\net8.0-windows\WordWrapping.pdb
 C:\Users\vagan\source\repos\WordWrapping\WordWrapping\obj\Debug\net8.0-windows\WordWrapping.genruntimeconfig.cache
 C:\Users\vagan\source\repos\WordWrapping\WordWrapping\obj\Debug\net8.0-windows\ref\WordWrapping.dll
+C:\Users\vagan\source\repos\WordWrapping\WordWrapping\obj\Debug\net8.0-windows\WordWrapping.sourcelink.json

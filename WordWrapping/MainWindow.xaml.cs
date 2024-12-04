@@ -22,22 +22,20 @@ namespace WordWrapping
         }
 
         private void BtnFormatText_Click(object sender, RoutedEventArgs e)
-        {
-            var str = TxtBxText.Text.Split(' ').ToList();            
-            var patterVolwels = @"\.*[бвгджзйклмнпрстфхцчшщ][ауоиэыяюеё][ауоиэыяюеё]\w.*";
-            var patterConsonants = @"\.*[ауоиэыяюеё][бвгджзйклмнпрстфхцчшщ][бвгджзйклмнпрстфхцчшщ]^\s[ауоиэыяюеё].*";
+        {            
 
-            //TxtBxText.Text = Regex.IsMatch(str[0].ToLower(), patterVolwels).ToString();
-            TxtBxText.Text = Regex.IsMatch(str[0].ToLower(), patterConsonants).ToString();
-
-            /*string text = TxtBxText.Text;
+            string text = TxtBxText.Text;
 
             //если валидация не прошла, то ретернимся отсюда,
             //чтобы не продолжать выполнение
             if (!FacadeMain.ValidateText(text))
                 return;
 
-            TxtBxText.Text = FacadeMain.FormatText(text);*/
+            //MessageBox.Show(text.Length.ToString());
+
+            var res = FacadeMain.FormatText(text);
+            TxtBxText.Clear();
+            TxtBxText.Text = res;
         }
     }
 }

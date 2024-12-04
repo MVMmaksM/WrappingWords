@@ -26,6 +26,18 @@ namespace WordWrapping.Facade
             return true;
         }
 
-        public static string FormatText(string text) => TextFormatter.FormatText(text, 1000);
+        public static string FormatText(string text) 
+        {
+            var textRows = TextFormatter.FormatText(text, 160);
+            //составляем строку с преносами
+            var textFormatted = string.Empty;
+
+            for (int i = 0; i < textRows.Count; i++)
+            {
+                textFormatted += textRows[i] + "\n";
+            }
+
+            return textFormatted;
+        } 
     }
 }
