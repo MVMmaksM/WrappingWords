@@ -24,8 +24,7 @@ namespace WordWrapping
         private void BtnFormatText_Click(object sender, RoutedEventArgs e)
         {
 
-            string text = TxtBxText.Text.Trim();
-            MessageBox.Show(TxtBxText.Text.Length.ToString());
+            string text = TxtBxText.Text.Trim();      
       
             //если валидация не прошла, то ретернимся отсюда,
             //чтобы не продолжать выполнение
