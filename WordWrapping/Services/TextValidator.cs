@@ -38,12 +38,21 @@ namespace WordWrapping.Services
                 .ToList();
             //сивол тире
             allowedSymbols.Add(Convert.ToChar(8211));
+            allowedSymbols.Add(Convert.ToChar(8212));
+            //кавычки
+            allowedSymbols.Add(Convert.ToChar(171));
+            allowedSymbols.Add(Convert.ToChar(187));
+            //возврат каретки
+            allowedSymbols.Add(Convert.ToChar(13));
+            //перевод строки
+            allowedSymbols.Add(Convert.ToChar(10));
+            
 
             foreach (var ch in text) 
             {
                 if (!allowedSymbols.Contains(ch) && !cirillics.Contains(ch)) 
                 {
-                    MessageHelper.Error($"Текст должен быть на русском языке {ch}");
+                    MessageHelper.Error($"Текст должен быть на русском языке {Convert.ToInt32(ch)}");
                     return false;
                 }                    
             }

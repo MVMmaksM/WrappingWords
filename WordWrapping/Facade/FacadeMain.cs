@@ -28,7 +28,7 @@ namespace WordWrapping.Facade
 
         public static string FormatText(string text) 
         {
-            var textRows = TextFormatter.FormatText(text, 160);
+            var textRows = TextFormatter.FormatText(text, 134);
             //составляем строку с преносами
             var textFormatted = string.Empty;
 

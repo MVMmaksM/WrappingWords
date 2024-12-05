@@ -90,8 +90,8 @@ namespace WordWrapping.Core
             
             textRows.Add(strResult.ToString());
 
-            //var result = FormatTextWidthRow(textRows, widthhRow);
-            return textRows;
+            var result = FormatTextWidthRow(textRows, widthhRow);
+            return result;
         }
 
         /// <summary>
@@ -102,42 +102,54 @@ namespace WordWrapping.Core
             for (int i = 0; i < textRows.Count; i++) 
             {
                 //количество пробелов, которые можно добавить
-                var countSpace = widthRow - textRows[i].Length;
+                var countSpace = widthRow - textRows[i].Trim().Length;
                 //сплитим строку по пробелам, чтобы составить новую, добавив лишние пробелы 
-                var words = textRows[i].Split(' ');
+                var words = textRows[i].Trim().Split(' ');
+                
                 //форматированная строка, в которую будут добавлены пробелы
                 var resultStr = string.Empty;
 
                 //если количество пробелов 1
                 if (countSpace == 1)
-                {   //середина строки в символах
-                    var middle = textRows[i].Length / 2;
-                    //индекс слова, которое находится примерно на середине строки
-                    var indexMiddleWord = 0;
-                    var tmpStr = string.Empty;
-
-                    //ищем индекс слова, которое находится примерно на середине строки
-                    //чтобы после него добавить один пробел
-                    for (int j = 0; j < words.Count(); j++) 
-                    {                        
-                        tmpStr += words[j];
-                        if (tmpStr.Length > middle)
+                {  
+                    for (int j = 0; j < words.Count(); j++)
+                    {
+                        if (j == 0)
                         {
-                            indexMiddleWord = j;
-                            break;
+                            resultStr += words[j] + "  ";
+                        }
+                        else 
+                        {
+                            resultStr += words[j] + " ";
                         }
                     }
 
+                    textRows[i] = resultStr;
+                }
+                else if (countSpace > 1 && countSpace < words.Count() - 1) 
+                {
                     for (int k = 0; k < words.Count(); k++)
                     {
-                        //если индекс равен индексу среднего слова, то добавляем 2 пробела
-                        //если нет, то один пробел
-                        resultStr += k == indexMiddleWord ? words[k] + "  " : words[k] + " ";                        
+                        if (k == words.Count() - 1)
+                        {
+                            resultStr += words[k];                            
+                        }
+                        else 
+                        {
+                            if (countSpace > 0)
+                            {
+                                resultStr += words[k] + "  ";
+                                countSpace--;
+                            }
+                            else
+                            {
+                                resultStr += words[k] + " ";
+                            }
+                        }                                     
                     }
-                }                
 
-                //добавляем форматированную строку в список 
-                textRows[i] = resultStr;
+                    textRows[i] = resultStr;
+                }              
             }
 
             return textRows;    

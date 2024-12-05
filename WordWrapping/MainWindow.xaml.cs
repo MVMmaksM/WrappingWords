@@ -22,10 +22,11 @@ namespace WordWrapping
         }
 
         private void BtnFormatText_Click(object sender, RoutedEventArgs e)
-        {            
+        {
 
-            string text = TxtBxText.Text;
-
+            string text = TxtBxText.Text.Trim();
+            MessageBox.Show(TxtBxText.Text.Length.ToString());
+      
             //если валидация не прошла, то ретернимся отсюда,
             //чтобы не продолжать выполнение
             if (!FacadeMain.ValidateText(text))
@@ -35,7 +36,7 @@ namespace WordWrapping
 
             var res = FacadeMain.FormatText(text);
             TxtBxText.Clear();
-            TxtBxText.Text = res;
+            TxtBxText.Text = res;                  
         }
     }
 }

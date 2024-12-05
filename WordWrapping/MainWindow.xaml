@@ -9,7 +9,7 @@
     <Grid Background="#FFD4E7F7">
         <Border Background="#086499" HorizontalAlignment="Center" Width="1000" Height="30" VerticalAlignment="Top"/>
         <Label x:Name="LblText" Content="Введите текст для форматирования" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Width="980"/>
-        <TextBox x:Name="TxtBxText" HorizontalAlignment="Center" Margin="0,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="980" Height="447"/>
+        <TextBox x:Name="TxtBxText" HorizontalContentAlignment="Stretch" FontFamily="Courier New" TextWrapping="Wrap" AcceptsReturn="True" HorizontalAlignment="Center" Margin="0,56,0,0"  VerticalAlignment="Top" Width="980" Height="447"/>
         <Border Background="#086499" HorizontalAlignment="Center" Width="1000" Height="30" VerticalAlignment="Bottom"/>
         <Button x:Name="BtnFormatText" Content="Форматировать" VerticalAlignment="Top" Height="25" Background="#48b9fa" Margin="400,523,400,0" Foreground="WhiteSmoke" BorderBrush="#086499" FontWeight="Bold" FontFamily="Arial" Click="BtnFormatText_Click">
             <Button.Resources>
