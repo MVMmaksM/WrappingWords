@@ -13,6 +13,9 @@ namespace WordWrapping.Services
     /// </summary>
     public class TextValidator
     {
+        /// <summary>
+        /// проверяет, что текст не пустой
+        /// </summary>
         public static bool isFillText(string text) 
         {
             //проверяем, что текст введен
@@ -25,37 +28,20 @@ namespace WordWrapping.Services
             return true;
         }
 
+        /// <summary>
+        /// проверяет, что текст не содержит английские буквы 
+        /// </summary>  
         public static bool isAllowedSymbols(string text) 
-        {
-            //символы кириллицы
-            var cirillics = Enumerable
-                .Range(1024, 256)
-                .Select(ch => (char)ch);
-            //другие символы, такие как пробелы цифры и т.д.
-            var allowedSymbols = Enumerable
-                .Range(32, 33)
-                .Select(ch => (char)ch)
-                .ToList();
-            //сивол тире
-            allowedSymbols.Add(Convert.ToChar(8211));
-            allowedSymbols.Add(Convert.ToChar(8212));
-            //кавычки
-            allowedSymbols.Add(Convert.ToChar(171));
-            allowedSymbols.Add(Convert.ToChar(187));
-            //возврат каретки
-            allowedSymbols.Add(Convert.ToChar(13));
-            //перевод строки
-            allowedSymbols.Add(Convert.ToChar(10));
-            
+        {          
+            //английские буквы
+            var notAllowed = Enumerable.Range(65, 25).Concat(Enumerable.Range(97, 25));
 
-            foreach (var ch in text) 
+            //если в тексте есть английская буква, то выдает ошибку
+            if (text.Where(ch => notAllowed.Contains(ch)).Count() > 0)
             {
-                if (!allowedSymbols.Contains(ch) && !cirillics.Contains(ch)) 
-                {
-                    MessageHelper.Error($"Текст должен быть на русском языке {Convert.ToInt32(ch)}");
-                    return false;
-                }                    
-            }
+                MessageHelper.Error("Текст должен быть на русском языке");
+                return false;
+            }    
 
             return true;
         }

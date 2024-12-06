@@ -13,6 +13,9 @@ namespace WordWrapping.Facade
     /// </summary>
     public class FacadeMain
     {
+        /// <summary>
+        /// валидация введенного текста
+        /// </summary>     
         public static bool ValidateText(string text)
         {
             //если не продена валидация, то возвращаем результат наверх
@@ -26,18 +29,22 @@ namespace WordWrapping.Facade
             return true;
         }
 
-        public static string FormatText(string text) 
+        /// <summary>
+        /// форматирование текста
+        /// </summary>   
+        public static string FormatText(string text, int widthRow) 
         {
-            var textRows = TextFormatter.FormatText(text, 134);
-            //составляем строку с преносами
-            var textFormatted = string.Empty;
+            var textRows = TextFormatter.FormatText(text, widthRow);                   
 
+            var textFormatted = new StringBuilder();
+
+            //составляем строку с преносами 
             for (int i = 0; i < textRows.Count; i++)
             {
-                textFormatted += textRows[i] + "\n";
+                textFormatted.Append(textRows[i] + "\n");
             }
 
-            return textFormatted;
+            return textFormatted.ToString();
         } 
     }
 }

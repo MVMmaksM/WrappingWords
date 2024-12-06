@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Globalization;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
@@ -23,19 +24,16 @@ namespace WordWrapping
 
         private void BtnFormatText_Click(object sender, RoutedEventArgs e)
         {
+            string text = TxtBxTextInput.Text.Trim();            
 
-            string text = TxtBxText.Text.Trim();      
-      
             //если валидация не прошла, то ретернимся отсюда,
             //чтобы не продолжать выполнение
             if (!FacadeMain.ValidateText(text))
-                return;
+                return;          
 
-            //MessageBox.Show(text.Length.ToString());
-
-            var res = FacadeMain.FormatText(text);
-            TxtBxText.Clear();
-            TxtBxText.Text = res;                  
+            var res = FacadeMain.FormatText(text, (int)IntgUpDownWidthRowText.Value);
+            TxtBxTextResult.Clear();
+            TxtBxTextResult.Text = res;                  
         }
     }
 }

@@ -8,11 +8,15 @@ using System.Threading.Tasks;
 
 namespace WordWrapping.Core
 {
+    /// <summary>
+    /// ядро логики программы
+    /// </summary>
     public class TextFormatter
     {       
         private const string _VOWELS = "аеюяиёуыоэУЕЫАОЭЯИЮЁ";
         private const string _CONSONANTS = "цкнгшщзхфвпрлджчсмтбЦКНГШЩЗХФВПРЛДЖЧСМТБ";
-        public static List<string> FormatText(string text, int widthhRow) 
+        private const string _CAPITAL_CHARS = "УЕЫАОЭЯИЮЁЦКНГШЩЗХФВПРЛДЖЧСМТБ";
+        public static List<string> FormatText(string text, int widthRow) 
         {
             //сплитим текст на слова по пробелам
             var words = text.Split(' ').ToList();
@@ -23,7 +27,7 @@ namespace WordWrapping.Core
             {
                 //если длина формируемой строки становится больше
                 //указанной длины строки, то делим слово
-                if (strResult.Length + words[i].Length > widthhRow)
+                if (strResult.Length + words[i].Length > widthRow)
                 {
                     //разделенное слово
                     var divideWord = (DivideWord(words[i]));
@@ -47,7 +51,7 @@ namespace WordWrapping.Core
 
                         var tmpStr = string.Empty;
                         //длина до конца строки
-                        var lengthFreeRow = widthhRow - strResult.Length;
+                        var lengthFreeRow = widthRow - strResult.Length;
 
                         for (int j = 0; j < syllables.Length; j++)
                         {
@@ -90,7 +94,7 @@ namespace WordWrapping.Core
             
             textRows.Add(strResult.ToString());
 
-            var result = FormatTextWidthRow(textRows, widthhRow);
+            var result = FormatTextWidthRow(textRows, widthRow);
             return result;
         }
 
@@ -107,35 +111,21 @@ namespace WordWrapping.Core
                 var words = textRows[i].Trim().Split(' ');
                 
                 //форматированная строка, в которую будут добавлены пробелы
-                var resultStr = string.Empty;
+                var resultStr = string.Empty;                
 
-                //если количество пробелов 1
-                if (countSpace == 1)
-                {  
-                    for (int j = 0; j < words.Count(); j++)
-                    {
-                        if (j == 0)
-                        {
-                            resultStr += words[j] + "  ";
-                        }
-                        else 
-                        {
-                            resultStr += words[j] + " ";
-                        }
-                    }
-
-                    textRows[i] = resultStr;
-                }
-                else if (countSpace > 1 && countSpace < words.Count() - 1) 
+                //если пробелов больше 0
+                if (countSpace > 0)
                 {
                     for (int k = 0; k < words.Count(); k++)
                     {
+                        //после последнего слова пробел не добавляем
                         if (k == words.Count() - 1)
                         {
-                            resultStr += words[k];                            
+                            resultStr += words[k];
                         }
-                        else 
+                        else
                         {
+                            //добавляем по 2 пробела, пока countSpace не станет равен 0
                             if (countSpace > 0)
                             {
                                 resultStr += words[k] + "  ";
@@ -143,13 +133,14 @@ namespace WordWrapping.Core
                             }
                             else
                             {
+                                //если countSpace = 0, то добавлем по одному пробелу
                                 resultStr += words[k] + " ";
                             }
-                        }                                     
+                        }
                     }
 
                     textRows[i] = resultStr;
-                }              
+                }
             }
 
             return textRows;    
@@ -165,9 +156,13 @@ namespace WordWrapping.Core
             //если слово содержит "-", то не делим его на слоги
             //возвращаем как есть
             if (word.Contains("-"))
-            {               
+                return word;            
+
+            //если слово длинее 1 символа и иммет больше одной заглавной
+            //то предполагаем, что это не ошибка, а аббревиатура
+            //и не делим такое слово, а возвращаем как есть
+            if(word.Length > 1 && word.Where(ch => _CAPITAL_CHARS.Contains(ch)).Count() > 1)
                 return word;
-            }
 
             //1 алгоритм
             result = AlgDivideTwoConsonants(word);
