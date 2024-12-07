@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{995FA76D-28B6-4758-B4FF-3DEC60950C27}|WordWrapping\\WordWrapping.csproj|solutionrelative:wordwrapping\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{995FA76D-28B6-4758-B4FF-3DEC60950C27}|WordWrapping\\WordWrapping.csproj|c:\\users\\vagan\\source\\repos\\wordwrapping\\wordwrapping\\facade\\facademain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{995FA76D-28B6-4758-B4FF-3DEC60950C27}|WordWrapping\\WordWrapping.csproj|solutionrelative:wordwrapping\\facade\\facademain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{995FA76D-28B6-4758-B4FF-3DEC60950C27}|WordWrapping\\WordWrapping.csproj|c:\\users\\vagan\\source\\repos\\wordwrapping\\wordwrapping\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{995FA76D-28B6-4758-B4FF-3DEC60950C27}|WordWrapping\\WordWrapping.csproj|solutionrelative:wordwrapping\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -22,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FacadeMain.cs",
-              "DocumentMoniker": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\Facade\\FacadeMain.cs",
-              "RelativeDocumentMoniker": "WordWrapping\\Facade\\FacadeMain.cs",
-              "ToolTip": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\Facade\\FacadeMain.cs",
-              "RelativeToolTip": "WordWrapping\\Facade\\FacadeMain.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAIA2wDQAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:03:11.048Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -51,13 +34,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WordWrapping\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\MainWindow.xaml.cs",
               "RelativeToolTip": "WordWrapping\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACEAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T15:09:20.309Z",
               "EditorCaption": ""

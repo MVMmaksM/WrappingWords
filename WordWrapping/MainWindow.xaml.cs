@@ -1,25 +1,15 @@
-﻿using System.Globalization;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 using WordWrapping.Facade;
-using WordWrapping.Services;
 
 namespace WordWrapping
 {    
     public partial class MainWindow : Window
-    {    
+    {
+        private FacadeMain _facadeMain;
         public MainWindow()
         {
             InitializeComponent();
+            _facadeMain = new FacadeMain();
         }
 
         private void BtnFormatText_Click(object sender, RoutedEventArgs e)
@@ -28,10 +18,10 @@ namespace WordWrapping
 
             //если валидация не прошла, то ретернимся отсюда,
             //чтобы не продолжать выполнение
-            if (!FacadeMain.ValidateText(text))
+            if (!_facadeMain.ValidateText(text))
                 return;          
 
-            var res = FacadeMain.FormatText(text, (int)IntgUpDownWidthRowText.Value);
+            var res = _facadeMain.FormatText(text, (int)IntgUpDownWidthRowText.Value);
             TxtBxTextResult.Clear();
             TxtBxTextResult.Text = res;                  
         }

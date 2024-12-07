@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 using WordWrapping.Core;
+using WordWrapping.Helpers;
 using WordWrapping.Services;
 
 namespace WordWrapping.Facade
@@ -13,17 +10,25 @@ namespace WordWrapping.Facade
     /// </summary>
     public class FacadeMain
     {
+        private IMessageHelper _messageHelper;
+        private ITextValidator _textValidator;
+        public FacadeMain()
+        {
+            _messageHelper = new MessageBoxHelper();
+            _textValidator = new TextValidator(_messageHelper);
+        }
+
         /// <summary>
         /// валидация введенного текста
         /// </summary>     
-        public static bool ValidateText(string text)
+        public bool ValidateText(string text)
         {
             //если не продена валидация, то возвращаем результат наверх
             //чтобы закончить дальнейшую работу
-            if (!TextValidator.isFillText(text))
+            if (!_textValidator.isFillText(text))
                 return false;
 
-            if (!TextValidator.isAllowedSymbols(text))
+            if (!_textValidator.isAllowedSymbols(text))
                 return false;
 
             return true;
@@ -32,7 +37,7 @@ namespace WordWrapping.Facade
         /// <summary>
         /// форматирование текста
         /// </summary>   
-        public static string FormatText(string text, int widthRow) 
+        public string FormatText(string text, int widthRow) 
         {
             var textRows = TextFormatter.FormatText(text, widthRow);                   
 

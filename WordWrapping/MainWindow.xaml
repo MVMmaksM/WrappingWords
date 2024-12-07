@@ -9,12 +9,19 @@
         Title="Перенос текста по словам" Height="650" Width="1000" ResizeMode="NoResize">
     <Grid Background="#FFD4E7F7">
         <Border Background="#086499" HorizontalAlignment="Center" Width="1000" Height="30" VerticalAlignment="Top"/>
-        <Label x:Name="LblTextInput" Content="Введите текст для форматирования" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Width="980"/>
-        <TextBox x:Name="TxtBxTextInput" HorizontalContentAlignment="Stretch" FontFamily="Courier New" TextWrapping="Wrap" AcceptsReturn="True" HorizontalAlignment="Center" Margin="0,56,0,0"  VerticalAlignment="Top" Width="980" Height="218"/>
-        <Label x:Name="LblTextResult" Content="Результат" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,274,0,0" VerticalAlignment="Top" Width="980"/>
-        <TextBox x:Name="TxtBxTextResult" IsReadOnly="True" HorizontalContentAlignment="Stretch" FontFamily="Courier New" TextWrapping="Wrap" AcceptsReturn="True" HorizontalAlignment="Center" Margin="0,300,0,0"  VerticalAlignment="Top" Width="980" Height="205"/>
+        <Label x:Name="LblTextInput" Content="Введите текст для форматирования" HorizontalAlignment="Center" 
+               HorizontalContentAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Width="980"/>
+        <TextBox x:Name="TxtBxTextInput" VerticalScrollBarVisibility="Visible" HorizontalContentAlignment="Stretch" 
+                 FontFamily="Courier New" TextWrapping="Wrap" AcceptsReturn="True" HorizontalAlignment="Center" 
+                 Margin="0,56,0,0"  VerticalAlignment="Top" Width="980" Height="218"/>
+        <Label x:Name="LblTextResult" Content="Результат" HorizontalAlignment="Center" HorizontalContentAlignment="Center" 
+               Margin="0,274,0,0" VerticalAlignment="Top" Width="980"/>
+        <TextBox x:Name="TxtBxTextResult" IsReadOnly="True" VerticalScrollBarVisibility="Visible" HorizontalContentAlignment="Stretch" 
+                 FontFamily="Courier New" TextWrapping="Wrap" AcceptsReturn="True" HorizontalAlignment="Center" Margin="0,300,0,0"  
+                 VerticalAlignment="Top" Width="980" Height="205"/>
         <Border Background="#086499" HorizontalAlignment="Center" Width="1000" Height="30" VerticalAlignment="Bottom"/>
-        <Button x:Name="BtnFormatText" Content="Форматировать" VerticalAlignment="Top" Height="25" Background="#48b9fa" Margin="400,523,400,0" Foreground="WhiteSmoke" BorderBrush="#086499" FontWeight="Bold" FontFamily="Arial" Click="BtnFormatText_Click">
+        <Button x:Name="BtnFormatText" Content="Форматировать" VerticalAlignment="Top" Height="25" Background="#48b9fa" 
+                Margin="400,523,400,0" Foreground="WhiteSmoke" BorderBrush="#086499" FontWeight="Bold" FontFamily="Arial" Click="BtnFormatText_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="2"/>
@@ -25,8 +32,8 @@
             </Button.Effect>
         </Button>
         <StackPanel Margin="10,510,600,48" Orientation="Horizontal">
-            <Label Content="Выберите ширину строки текста (мин 50, макс 134)" HorizontalContentAlignment="Center" Height="25"/>
-            <xctk:IntegerUpDown x:Name="IntgUpDownWidthRowText" Height="25" Value="134" FormatString="N0" Minimum="50" Maximum="134" Width="80"/>
+            <Label Content="Выберите ширину строки текста (мин 50, макс 132)" HorizontalContentAlignment="Center" Height="25"/>
+            <xctk:IntegerUpDown x:Name="IntgUpDownWidthRowText" Height="25" Value="132" FormatString="N0" Minimum="50" Maximum="132" Width="80"/>
         </StackPanel>
     </Grid>
 </Window>

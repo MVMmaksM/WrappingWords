@@ -1,10 +1,4 @@
-﻿using Microsoft.VisualBasic;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace WordWrapping.Core
 {
@@ -48,7 +42,6 @@ namespace WordWrapping.Core
                     {
                         //если слово разделилось, то пытаемся подобрать
                         //слоги по оставшейся длине пустого места
-
                         var tmpStr = string.Empty;
                         //длина до конца строки
                         var lengthFreeRow = widthRow - strResult.Length;
@@ -212,7 +205,8 @@ namespace WordWrapping.Core
                 if (i + 2 > word.Length - 1)
                     break;
               
-                //ищем в слове совпадение ГСС и подстрока ГСС не является окончанием слова и подстрока после ГСС содержит хотя бы одну гласную
+                //ищем в слове совпадение ГСС и подстрока ГСС не является окончанием слова
+                //и подстрока после ГСС содержит хотя бы одну гласную
                 if (_VOWELS.Contains(word[i]) && _CONSONANTS.Contains(word[i + 1]) && _CONSONANTS.Contains(word[i + 2]) &&
                     isVowelsStr(word.Substring(i + 3)))
                 {
@@ -272,7 +266,7 @@ namespace WordWrapping.Core
         /// <summary>
         /// проверяет правильно ли разделено слово на подслова
         /// </summary>
-        static bool isValidDivideWord(string word)
+        private static bool isValidDivideWord(string word)
         {
             var subWords = word.Split('-');
             //выбираем из подслов, только те, где нет ни одной гласной или нет ни одной согласной
@@ -284,13 +278,13 @@ namespace WordWrapping.Core
         /// <summary>
         /// модержит ли строка хотя бы одну согласную
         /// </summary>
-        static bool isConsonantsStr(string str) =>
+        private static bool isConsonantsStr(string str) =>
             str.Where(ch => _CONSONANTS.Contains(ch)).Count() > 0;
 
         /// <summary>
         /// содержит ли строка хотя бы одну гласную
         /// </summary>
-        static bool isVowelsStr(string str) =>
+        private static bool isVowelsStr(string str) =>
             str.Where(ch => _VOWELS.Contains(ch)).Count() > 0;
     }
 }
