@@ -13,12 +13,31 @@ namespace WordWrapping.Core
         public static List<string> FormatText(string text, int widthRow) 
         {
             //сплитим текст на слова по пробелам
-            var words = text.Split(' ').ToList();
+            //и выбираем только слова без пробелов
+            var words = text
+                .Split(' ')
+                .Where(w => w != "")
+                .ToList();
             var strResult = new StringBuilder();
             var textRows = new List<string>();
 
             for (int i = 0; i < words.Count; i++)
             {
+                if (words[i].Contains("\r\n"))
+                {
+                    var wordSplitting = words[i].Split("\r\n");
+                    strResult.Append(wordSplitting[0]);
+
+                    //добавляем текущую строку в результирующий лист
+                    textRows.Add(strResult.ToString());
+
+                    //чистим строку
+                    strResult.Clear();
+                    //добавляем слово в начало новой строки
+                    strResult.Append(wordSplitting[1] + " ");
+                    continue;
+                }
+
                 //если длина формируемой строки становится больше
                 //указанной длины строки, то делим слово
                 if (strResult.Length + words[i].Length > widthRow)

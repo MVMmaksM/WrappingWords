@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WordWrapping")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b08559f2559b89998c2b98ece7cb0c0b3930e7d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c6033b987d4842418cc8d71253edb9504d9ae3c")]
 [assembly: System.Reflection.AssemblyProductAttribute("WordWrapping")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WordWrapping")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

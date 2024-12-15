@@ -38,3 +38,43 @@ C:\Users\vagan\source\repos\WordWrapping\WordWrapping\bin\Debug\net8.0-windows\s
 C:\Users\vagan\source\repos\WordWrapping\WordWrapping\bin\Debug\net8.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\vagan\source\repos\WordWrapping\WordWrapping\obj\Debug\net8.0-windows\WordWrapping.csproj.AssemblyReference.cache
 C:\Users\vagan\source\repos\WordWrapping\WordWrapping\obj\Debug\net8.0-windows\WordWrap.BFFA985B.Up2Date
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\WordWrapping.exe
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\WordWrapping.deps.json
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\WordWrapping.runtimeconfig.json
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\WordWrapping.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\WordWrapping.pdb
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\Xceed.Wpf.AvalonDock.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\Xceed.Wpf.Toolkit.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\bin\Debug\net8.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\WordWrapping.csproj.AssemblyReference.cache
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\WordWrapping_MarkupCompile.cache
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\WordWrapping_MarkupCompile.lref
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\WordWrapping.g.resources
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\WordWrapping.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\WordWrapping.AssemblyInfoInputs.cache
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\WordWrapping.AssemblyInfo.cs
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\WordWrapping.csproj.CoreCompileInputs.cache
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\WordWrapping.sourcelink.json
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\WordWrapping.csproj.CopyComplete
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\WordWrapping.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\refint\WordWrapping.dll
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\WordWrapping.pdb
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\WordWrapping.genruntimeconfig.cache
+C:\Users\vagan\OneDrive\Рабочий стол\Учеба КГУ\3 семестр\ОП\Курсовая\WrappingWords\WordWrapping\obj\Debug\net8.0-windows\ref\WordWrapping.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\WordWrapping.csproj": {}
+    "C:\\Users\\vagan\\OneDrive\\Рабочий стол\\Учеба КГУ\\3 семестр\\ОП\\Курсовая\\WrappingWords\\WordWrapping\\WordWrapping.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\WordWrapping.csproj": {
+    "C:\\Users\\vagan\\OneDrive\\Рабочий стол\\Учеба КГУ\\3 семестр\\ОП\\Курсовая\\WrappingWords\\WordWrapping\\WordWrapping.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\WordWrapping.csproj",
+        "projectUniqueName": "C:\\Users\\vagan\\OneDrive\\Рабочий стол\\Учеба КГУ\\3 семестр\\ОП\\Курсовая\\WrappingWords\\WordWrapping\\WordWrapping.csproj",
         "projectName": "WordWrapping",
-        "projectPath": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\WordWrapping.csproj",
+        "projectPath": "C:\\Users\\vagan\\OneDrive\\Рабочий стол\\Учеба КГУ\\3 семестр\\ОП\\Курсовая\\WrappingWords\\WordWrapping\\WordWrapping.csproj",
         "packagesPath": "C:\\Users\\vagan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vagan\\source\\repos\\WordWrapping\\WordWrapping\\obj\\",
+        "outputPath": "C:\\Users\\vagan\\OneDrive\\Рабочий стол\\Учеба КГУ\\3 семестр\\ОП\\Курсовая\\WrappingWords\\WordWrapping\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vagan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -35,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -70,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
